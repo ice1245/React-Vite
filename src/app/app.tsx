@@ -1,13 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import Header from './components/Layout/header/header';
+import {Fragment} from "react";
+import Meals from "./components/Meals/Meals";
 
 export function App() {
   return (
-    <>
-      <NxWelcome title="react-vite-learn" />
-      <div />
-    </>
+    <Fragment>
+      <Header/>
+      <Meals/>
+    </Fragment>
   );
 }
 
