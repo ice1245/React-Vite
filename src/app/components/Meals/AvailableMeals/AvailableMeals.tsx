@@ -35,7 +35,7 @@ const DUMMY_MEALS = [
 
 export function MealsList(props: AvailableMeals) {
     const mealsList = DUMMY_MEALS.map((meal) => {
-        return <MealItem key={meal.id} description={meal.description} name={meal.name}
+        return <MealItem key={meal.id} id={meal.id} description={meal.description} name={meal.name}
                          price={meal.price}></MealItem>
     });
     return (
